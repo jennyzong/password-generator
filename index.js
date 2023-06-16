@@ -10,8 +10,8 @@ function newPasswords() {
     for(let i=0; i<15; i++) {
         let randomNumber1 = Math.floor(Math.random() * characters.length);
         let randomNumber2 = Math.floor(Math.random() * characters.length);
-        password1 += characters[randomNumber1 + 1]
-        password2 += characters[randomNumber2 + 1]
+        password1 += characters[randomNumber1]
+        password2 += characters[randomNumber2]
     }
     
     passwordEl1.innerText = password1
